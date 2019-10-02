@@ -1,28 +1,26 @@
 # jpochetedmead.github.io
 
-Portfolio
-
-Mid-Term project
-
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+This is my Portfolio Mid-Term project for the class -> "CSET-120: Software Project I"
 
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* HTML5
+* CSS3
+* JavaScript
+* Lack of Sleep
 
 ## Setup
-To run this project, install it locally using npm:
+To work on this project, you can fork it, or clone it via the command line:
 
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+$ cd ~
+$ git clone https://github.com/jpochetedmead/jpochetedmead.github.io.git
+$ cd jpochetedmead.github.io/
+$ ls
 ```
