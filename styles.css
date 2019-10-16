@@ -298,25 +298,43 @@ h1 {
 }
 
 /**** SMALL ****/
-/*
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 910px) {
+  .header ul {
+    flex-direction: column;
+  }
+  
+  
+  li {
+    margin: 0;
+  }
+ 
+  a{
+    display: block;
+  }
+
+  .part-one img {
+    width: 450px;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
 
 /**** MEDIUM ****/
-/*
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 }
 
 /**** LARGE ****/
-/*
+
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
 
 }
 
 /**** EXTRA LARGE ****/
-/*
+
 @media screen and (min-width: 1366px) {
 
 }
