@@ -35,13 +35,12 @@
    <link rel="stylesheet" href="styles.css" type="text/css">
    <title>Home</title>
  </head>
+
 <!-- CONTENT -->
  <body>
-<!--
-   <h1>Hello</h1>
-   <button class="changename">Change user</button>
- -->
+
 <!-- HEADER -->
+
    <header class="header">
 
      <figure class="logo">
@@ -50,22 +49,25 @@
 
     <nav class="nav-bar">
      <ul class="nav-container">
-      <li><a href="#About">About</a></li>
-      <li><a href="#Skills">Skills</a></li>
-      <li><a href="https://github.com/jpochetedmead">Projects</a></li>
-      <li><a href=".partfive">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
      </ul>
     </nav>
+
    </header>
+
    <!-- END OF HEADER -->
 
    <!-- ARTICLES -->
+
   <article class="the-java">
     <h1>Welcome to my website!</h1>
       <button class="changename">Click here to change your name :)</button>
   </article>
 
-   <article class="part-one">
+   <article id="about" class="part-one">
      <h1>About Me</h1>
      <p><img src="images/JPEG_-1871273501 (1).jpg" alt="Julio Pochet"></p>
 <p>My name is Julio Pochet. I'm 25 years old, born and raised in The Dominican Republic, where I graduated from High School back in 2010. Currently, I'm a Thaddeus Stevens College of Technology student pursuying a Computer Software Engineering Degree.</p>
@@ -77,7 +79,7 @@
 <p>Trust me, if you have me as a partner, you'll have someone very ambitious when it comes to pursuying his dreams.</p>
    </article>
 
-   <article class="part-two">
+   <article id="skills" class="part-two">
      <h1 class="skill-header">Skills</h1>
   <ul class="skills-list">
     <li>Basic understanding of the Command line.</li>
@@ -99,18 +101,18 @@
 
    </article>
 
-   <article class="part-three">
+   <article id="projects" class="part-three">
      <h1>Projects</h1>
      You can go to <a href="https://github.com/jpochetedmead?tab=repositories" target="_blank">Github</a> to see all my projects.</p>
      </article>
 
-   <article class="part-four">
+   <article id="blog" class="part-four">
      <h1>Blog</h1>
      <p>You can visit my external Blog where I post about Business, Marketing, Technology etc.</p>
      <p>here is the link <a href="https://blog.moneyideas101.com/" target="_blank">MY BLOG - Money Ideas 101</a></p>
      </article>
 
-   <article class="part-five">
+   <article id="contact" class="part-five">
      <h1>Contact Me</h1>
      <p>If you want to contact me, feel free to send me an email and I'll get back to you as soon as possible.</p>
      <a href="mailto:jpe3841@gmail.com?subject=feedback">Email Me!</a>
@@ -118,15 +120,9 @@
 
    <!-- END OF ARTICLES -->
 
-   <!-- ASIDE -->
-   <aside class="sidebar">
-
-   </aside>
-   <!-- END OF ASIDE -->
-
    <!-- FOOTER -->
     <footer class="footer">
-      <span class="down-span">©Copyright <time datetime='2019-10-13 23:59-0800'>2019 by Julio Pochet Edmead. All rights reversed.</span>
+      <span class="down-span"> ©Copyright <time datetime='2019-10-13 23:59-0800'> 2019 by Julio Pochet Edmead. All rights reversed. </span>
       <nav class="down-nav">
       <ul>
        <li class="btn"><a href="https://www.facebook.com/julio.pochetedmead"><img src="images/Facebook.png" alt="Facebook"></a></li>
@@ -139,5 +135,7 @@
 
    <!-- Link to Script -->
   <script src="script.js"></script>
+
+  <!-- END OF CONTENT -->
  </body>
 </html>
