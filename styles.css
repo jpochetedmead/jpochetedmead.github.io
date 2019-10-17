@@ -33,12 +33,19 @@ header {
   flex-direction: row-reverse;
 }
 
-.header figure {
+.header figure,
+.header nav,
+.header ul,
+.header li,
+.header a {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
+}
+
+.header figure {
   padding: 1%;
 }
 
@@ -48,43 +55,23 @@ header {
 }
 
 .header nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   color: black;
 }
 
 .header ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   list-style: none;
 }
 
 .header li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin: 1em;
-  width: 100%;
 }
 
 .header a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   color: black;
   border: 3px solid green;
   border-radius: 25%;
   font-size: 20px;
-  width: 100%;
   padding: 1%;
 }
 
@@ -107,6 +94,22 @@ header {
   border: 0px;
 }
 
+.the-java,
+.part-one,
+.part-two,
+.part-three,
+.part-four,
+.part-five,
+.sidebar {
+  border: 1px solid black;
+  padding: 2%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:
+}
+
 .the-java {
   border: 1px solid black;
   padding: 2%;
@@ -118,11 +121,6 @@ header {
 }
 
 .part-one {
-  border: 1px solid black;
-  padding: 2%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -142,27 +140,23 @@ header {
 }
 
 .part-two {
-  border: 1px solid black;
-  padding: 2%;
-  background-color: white;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+}
+
+.skill-header,
+.skills-list,
+.skills-img {
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-header {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
   align-items: center;
   width: 100%;
 }
 
 .skills-list {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
@@ -171,8 +165,6 @@ header {
 }
 
 .skills-img {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -187,43 +179,11 @@ header {
   width: 3em;
 }
 
-.part-three {
-  border: 1px solid black;
-  padding: 2%;
-  background-color: white;
+.footer,
+.down-span,
+.down-nav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.part-four {
-  border: 1px solid black;
-  padding: 2%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.part-five {
-  border: 1px solid black;
-  padding: 2%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.sidebar {
-  border: 1px solid black;
-  padding: 2%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -234,17 +194,11 @@ header {
   padding: 2%;
   width: 100%;
   background-color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
 
 .down-span {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
   width: 50%;
   padding: 2%;
   margin-left: 1em;
@@ -252,10 +206,7 @@ header {
 }
 
 .down-nav {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   width: 50%;
   padding: 2%;
 }
@@ -298,25 +249,43 @@ h1 {
 }
 
 /**** SMALL ****/
-/*
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 910px) {
+  .header ul {
+    flex-direction: column;
+  }
+  
+  
+  li {
+    margin: 0;
+  }
+ 
+  a{
+    display: block;
+  }
+
+  .part-one img {
+    width: 450px;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
 
 /**** MEDIUM ****/
-/*
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 }
 
 /**** LARGE ****/
-/*
+
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
 
 }
 
 /**** EXTRA LARGE ****/
-/*
+
 @media screen and (min-width: 1366px) {
 
 }
