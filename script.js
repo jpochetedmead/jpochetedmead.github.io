@@ -14,7 +14,7 @@ myImage.onclick = function() {
   }
   else {
     myImage.setAttribute ('src','images/emojis/hi-emoji.gif');
-    alert('Come on...STOP!');
+    alert('Come on...STOP!!!!');
   }
 }
 
