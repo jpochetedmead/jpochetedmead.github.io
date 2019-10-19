@@ -17,18 +17,17 @@ body {
   background: linear-gradient(180deg, #500050 10%, #18392b 90%);
   color: black;
   border: 2px solid black;
-  border-radius: 12%;
+  border-radius: 10%;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  border: 1px solid black;
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
   padding: 1%;
   width: 100%;
-  background-color: white;
+  background: linear-gradient(180deg, #500050 10%, #18392b 90%);
   display: flex;
   flex-direction: row-reverse;
 }
@@ -46,16 +45,16 @@ header {
 }
 
 .header figure {
-  padding: 1%;
+  padding: 3%;
 }
 
 .header img {
-  border: 1px solid white;
   border-radius: 50%;
+  padding: 3%
 }
 
 .header nav {
-  color: black;
+color: white;
 }
 
 .header ul {
@@ -68,11 +67,10 @@ header {
 
 .header a {
   text-decoration: none;
-  color: black;
+  color: white;
   border: 3px solid green;
-  border-radius: 25%;
+  border-radius: 35%;
   font-size: 20px;
-  padding: 1%;
 }
 
 .header a:hover {
@@ -82,11 +80,11 @@ header {
   border-bottom: 5px solid purple;
   background-color: green;
   font-size: 25px;
-  padding: 1%;
+  padding: 9%;
 }
 
 .logo a {
-  border: 0px;
+  border: 0;
 }
 
 .logo a:hover {
@@ -94,24 +92,29 @@ header {
   border: 0px;
 }
 
-.the-java,
-.part-one,
-.part-two,
-.part-three,
-.part-four,
-.part-five,
-.sidebar {
-  border: 1px solid black;
-  padding: 2%;
-  background-color: white;
+.the-java {
+  background: linear-gradient(180deg, #500050 10%, #18392b 90%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.the-java {
-  border: 1px solid black;
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: limegreen;
+}
+
+.part-one,
+.part-two,
+.part-three,
+.part-four,
+.part-five,
+.sidebar {
+  border-top: 10px solid #500050;
   padding: 2%;
   background-color: white;
   display: flex;
@@ -188,27 +191,27 @@ header {
 }
 
 .footer {
-  border: 1px solid black;
+  border-top: 5px solid #500050;
   border-bottom-left-radius: 45%;
   border-bottom-right-radius: 45%;
-  padding: 2%;
+  padding: 1%;
   width: 100%;
-  background-color: white;
-  justify-content: center;
+  background: linear-gradient(180deg, #500050 10%, #18392b 90%);
 }
 
 .down-span {
   justify-content: flex-start;
-  width: 50%;
+  width: 100%;
   padding: 2%;
   margin-left: 1em;
   margin-right: 1em;
+  color: white;
 }
 
 .down-nav {
   justify-content: flex-end;
-  width: 50%;
-  padding: 2%;
+  width: 100%;
+  padding: 10%;
 }
 
 .down-nav ul {
@@ -241,29 +244,31 @@ header {
   margin-right: 1em;
 }
 
-h1 {
-  color: purple;
-  background-color: green;
-  padding: 1%;
-  border-radius: 35%;
-}
-
 /**** SMALL ****/
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1030px) {
   .header ul {
     flex-direction: column;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-right: 5%;
   }
 
   li {
-    margin: 0;
+
   }
 
   a{
-    display: block;
+
   }
 
-  .part-one img {
+.logo img {
+  height: 50%;
+  width: 70%;
+
+}
+
+.part-one img {
     width: 450px;
   }
   .footer {
