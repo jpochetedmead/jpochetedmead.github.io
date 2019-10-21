@@ -126,16 +126,33 @@ color: white;
   color: white;
 }
 
-h1 {
+.part-one h1,
+.part-two h1,
+.part-three h1,
+.part-four h1,
+.part-five h1 {
+  display: flex;
   margin-bottom: 3%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border-radius: 35%;
 }
 
-h1:hover {
+.part-one h1:hover,
+.part-two h1:hover,
+.part-three h1:hover,
+.part-four h1:hover,
+.part-five h1:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-a {
+.part-one a,
+.part-two a,
+.part-three a,
+.part-four a,
+.part-five a {
   color: white;
 }
 
@@ -178,21 +195,34 @@ a {
   padding-right: 15px;
 }
 
-.part-one .about-me-pic {
+.about-me-pic {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  width: 50%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.about-me-pic {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .part-two {
+  flex-direction: column;
+}
+
+.skill-header{
+  display: flex;
+  flex-direction: column;
+  margin: 1% 5% 5% 5%;
+}
+
+.list-skill-pics{
+  display: flex;
   flex-direction: row;
 }
 
-.skill-header,
 .skills-list,
 .skills-img {
   display: flex;
@@ -200,22 +230,43 @@ a {
 }
 
 .skill-header {
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 25%;
+  border-radius: 35%;
+}
+
+.skills-emoji {
+  border-radius: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 1%;
+  margin: 1% 5% 5% 5%;;
+}
+
+.skills-emoji:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .skills-list {
-  justify-content: flex-start;
-  align-items: flex-start;
   width: 100%;
-  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
 }
 
 .skills-img {
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
 }
 
 .skills-img li {
@@ -226,10 +277,32 @@ a {
   height: 3em;
   width: 3em;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .skills-img img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.projects-emoji {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 20%;
+  padding: 1%;
+  margin: 1% 5% 5% 5%;;
+}
+
+.projects-emoji:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.blog-emoji {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 20%;
+  padding: 1%;
+  margin: 1% 5% 5% 5%;
+}
+
+.blog-emoji:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -270,10 +343,10 @@ a {
 }
 
 .contact-image {
-  border-radius: 100%;
-  padding: 1%;
-  margin: 3%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 30%;
+  padding: 1%;
+  margin: 1% 5% 5% 5%;
 }
 
 .contact-image:hover {
