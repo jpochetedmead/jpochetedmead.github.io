@@ -423,19 +423,19 @@ color: white;
 }
 
 #scroll-top-button {
-  display: flex; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
+  display: flex; /* Hidden by Default */
+  position: fixed; /* Fixed/Sticky position */
   bottom: 100px; /* Place the button at the bottom of the page */
-  right: 10px; /* Place the button 30px from the right */
+  right: 10px; /* Place the button 10px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: 1px solid purple; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: green; /* Set a background color */
+  border: 1px solid purple; /* Remove Borders */
+  outline: none; /* Remove Outline */
+  background-color: green; /* Set a Background Color */
   color: white; /* Text color */
   cursor: default; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 15px; /* Some Padding */
   border-radius: 10px; /* Rounded corners */
-  font-size: 15px; /* Increase font size */
+  font-size: 15px; /* Increase Font Size */
 }
 
 #scroll-top-button:hover {
