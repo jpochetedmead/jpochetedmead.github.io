@@ -13,10 +13,11 @@ html {
 
 body {
   width: 100%;
-  padding: 20px 20px 20px 20px;
+  height: 100%;
+  padding: 20px 20px;
   background: linear-gradient(180deg, #500050 10%, #18392b 90%);
   color: black;
-  border-radius: 10%;
+  border-radius: 7%;
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -50,7 +51,7 @@ header {
 
 .header img {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 6%;
 }
 
@@ -138,6 +139,9 @@ color: white;
   align-items: center;
   width: 25%;
   border-radius: 35%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: limegreen;
 }
 
 .part-one h1:hover,
@@ -156,10 +160,6 @@ color: white;
   color: white;
 }
 
-.part-one {
-  background-color: #18392b;
-}
-
 .part-one .about-me-pic {
   margin: 3%;
   padding: 0.5%;
@@ -169,23 +169,28 @@ color: white;
   width: 70%;
 }
 
-.part-two {
-  background: linear-gradient(180deg, #18392b 10%, #500050 90%);
-  border-top: 10px solid transparent;
-  background-repeat: no-repeat;
-}
-
+.part-two,
 .part-three,
 .part-four,
 .part-five,
 .footer {
-  border-top: 10px solid #18392b;
+  margin-top: 3%;
 }
 
-.part-three,
-.part-four,
+.part-one {
+  background: linear-gradient(180deg, #18392b 10%, #500050 90%); /* Green to Purple */
+}
+.part-two {
+  background: linear-gradient(180deg, #500050 10%, #18392b 90%); /* Purple to Green */
+}
+.part-three {
+  background: linear-gradient(180deg, #18392b 10%, #500050 90%); /* Green to Purple */
+}
+.part-four {
+  background: linear-gradient(180deg, #500050 10%, #18392b 90%); /* Purple to Green */
+}
 .part-five {
-  background-color: #500050;
+  background: linear-gradient(180deg, #18392b 10%, #500050 90%); /* Green to Purple */
 }
 
 .part-one p {
@@ -362,8 +367,8 @@ color: white;
 }
 
 .footer {
-  border-bottom-left-radius: 45%;
-  border-bottom-right-radius: 45%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
   padding: 1%;
   width: 100%;
   background: linear-gradient(180deg, #500050 10%, #18392b 90%);
