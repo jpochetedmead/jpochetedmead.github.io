@@ -51,7 +51,7 @@ header {
 .header img {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border-radius: 50%;
-  padding: 3%
+  padding: 6%;
 }
 
 .header nav {
@@ -118,34 +118,48 @@ color: white;
 .part-four,
 .part-five {
   padding: 2%;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  color: white;
+}
+
+a {
+  color: white;
 }
 
 .part-one {
   background-color: #18392b;
 }
 
+.part-one .about-me-pic {
+  margin: 3%;
+  padding: 0.5%;
+}
+
+.part-one p {
+  width: 70%;
+}
+
 .part-two {
   background: linear-gradient(180deg, #18392b 10%, #500050 90%);
+  border-top: 10px solid transparent;
+  background-repeat: no-repeat;
+}
+
+.part-three,
+.part-four,
+.part-five,
+.footer {
+  border-top: 10px solid #18392b;
 }
 
 .part-three,
 .part-four,
 .part-five {
   background-color: #500050;
-}
-
-.part-one,
-.part-two,
-.part-three,
-.part-four,
-.part-five p {
-  color: white;
 }
 
 .part-one p {
@@ -187,7 +201,6 @@ color: white;
   align-items: flex-start;
   width: 100%;
   margin-left: 10%;
-
 }
 
 .skills-img {
@@ -220,7 +233,6 @@ color: white;
 }
 
 .footer {
-  border-top: 5px solid #500050;
   border-bottom-left-radius: 45%;
   border-bottom-right-radius: 45%;
   padding: 1%;
@@ -275,8 +287,6 @@ color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-
-
 /*** iPhone X ***/
 @@media screen and (min-width: 375px) and (max-width: 812px) {
   .header {
@@ -304,20 +314,12 @@ color: white;
 
 /**** SMALL ****/
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1184px) {
   .header ul {
     flex-direction: column;
     padding-top: 5%;
     padding-left: 30%;
     padding-right: 5%;
-  }
-
-  li {
-
-  }
-
-  a{
-
   }
 
   .logo img {
@@ -327,7 +329,6 @@ color: white;
 
 .part-one {
   width: 100%;
-
 }
 
 .part-one .about-me-pic {
