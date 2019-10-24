@@ -1,6 +1,7 @@
 // Browser Message code
+//
 
-alert("Written & Coded By Julio Pochet Edmead");
+alert("Written & Coded By Julio Pochet Edmead")
 
 // Image switcher code
 
