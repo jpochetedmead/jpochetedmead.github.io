@@ -163,9 +163,47 @@ color: white;
   color: white;
 }
 
+.part-one figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.part-one a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.part-one img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 100%;
+  padding: 1%;
+  margin: 5% 3%;
+}
+
+.part-one img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .part-one .about-me-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin: 3%;
-  padding: 0.5%;
+  padding: 1%;
 }
 
 .part-one p {
@@ -201,19 +239,6 @@ color: white;
   padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.about-me-pic {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.about-me-pic {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .part-two {
@@ -252,7 +277,7 @@ color: white;
   justify-content: center;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   padding: 1%;
-  margin: 1% 5% 5% 5%;;
+  margin: 1% 5% 10% 5%;;
 }
 
 .skills-emoji:hover {
@@ -265,7 +290,7 @@ color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5%;
+  margin: 1%;
 }
 
 .skills-img {
@@ -274,7 +299,7 @@ color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5%;
+  margin: 1%;
 }
 
 .skills-img li {
@@ -282,13 +307,30 @@ color: white;
 }
 
 .skills-img img {
-  height: 3em;
-  width: 3em;
+  height: 3.5em;
+  width: 3.5em;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border-radius: 100%;
 }
 
 .skills-img img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.part-two-figure img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 12%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 1%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.part-two-figure img:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -301,6 +343,23 @@ color: white;
 
 .projects-emoji:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.part-three .image-part-three {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 10%;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+width: 50%;
+margin: 10% 3%;
+padding: 1%;
+-webkit-transform:rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ transform: rotate(90deg);
 }
 
 .blog-emoji {
@@ -431,14 +490,14 @@ color: white;
   bottom: 100px; /* Place the button at the bottom of the page */
   right: 10px; /* Place the button 10px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: 1px solid purple; /* Remove Borders */
-  outline: none; /* Remove Outline */
-  background-color: green; /* Set a Background Color */
-  color: white; /* Text color */
+  border: 1px solid purple;
+  outline: none;
+  background-color: green;
+  color: white;
   cursor: default; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some Padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 15px; /* Increase Font Size */
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
 }
 
 #scroll-top-button:hover {
@@ -447,7 +506,7 @@ color: white;
 }
 
 /*** iPhone X ***/
-@@media screen and (min-width: 375px) and (max-width: 812px) {
+@media screen and (min-width: 375px) and (max-width: 812px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -491,21 +550,42 @@ color: white;
 }
 
 .part-one .about-me-pic {
-  width: 50%;
+  width: 100%;
   }
 
   .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
-  .footer img {
+  .footer .down-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 1%;
+    margin: 1%;
+  }
+
+  .down-nav .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer marquee {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
