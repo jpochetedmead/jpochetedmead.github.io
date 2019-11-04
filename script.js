@@ -1,5 +1,4 @@
 // Browser Message code
-//
 
 alert("Written & Coded By Julio Pochet Edmead")
 
