@@ -3,7 +3,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Collaborator](#collaborator)
 
 ## General info
 This is my Portfolio Mid-Term project for the class -> "CSET-120: Software Project I"
@@ -13,14 +13,7 @@ Project is created with:
 * HTML5
 * CSS3
 * JavaScript
-* Lack of Sleep
+* A lot of Coffee :)
 
-## Setup
-To work on this project, you can fork it, or clone it via the command line:
-
-```
-$ cd ~
-$ git clone https://github.com/jpochetedmead/jpochetedmead.github.io.git
-$ cd jpochetedmead.github.io/
-$ ls
-```
+## Collaborator
+* Julio Pochet Edmead
